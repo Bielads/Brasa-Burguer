@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brasa Burger — hambúrguer artesanal feito na brasa, com ingredientes selecionados.">
+  <title>Brasa Burger | Feito na brasa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Brasa Burger - início">
+        <span class="brand-mark">B<span>🔥</span></span>
+        <span class="brand-name">BRASA <small>BURGER</small></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#historia">Nossa história</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="button button-small header-cta" href="#cardapio">Ver cardápio <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> HAMBÚRGUER ARTESANAL</p>
+          <h1>O sabor que<br>vem <span>da brasa.</span></h1>
+          <p class="hero-description">Pão macio, carne suculenta e ingredientes de verdade. A combinação perfeita para matar sua fome do jeito certo.</p>
+          <div class="hero-actions">
+            <a class="button" href="#cardapio">Conheça o cardápio <span>↗</span></a>
+            <a class="text-link" href="#historia"><span class="play-icon">▶</span> Nossa história</a>
+          </div>
+          <div class="hero-details">
+            <div class="detail-item"><span class="detail-icon">✦</span><span><strong>100%</strong><small>artesanal</small></span></div>
+            <div class="detail-item"><span class="detail-icon">♨</span><span><strong>Na brasa</strong><small>todos os dias</small></span></div>
+            <div class="detail-item"><span class="detail-icon">♡</span><span><strong>Feito com</strong><small>carinho</small></span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=85" alt="Hambúrguer artesanal com queijo, alface e tomate">
+          </div>
+          <div class="hero-sticker"><span>FEITO</span><strong>NA<br>BRASA</strong><span>DESDE 2024</span></div>
+          <div class="hero-caption"><span class="caption-dot"></span> Sabor de verdade, sem atalhos.</div>
+        </div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="menu-section section" id="cardapio">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> ESCOLHA O SEU</p>
+            <h2>Direto da <span>chapa.</span></h2>
+          </div>
+          <p class="section-intro">Receitas caprichadas, ingredientes frescos e aquele sabor que pede mais uma mordida.</p>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filtrar cardápio">
+          <button class="filter-button active" data-filter="todos">Todos</button>
+          <button class="filter-button" data-filter="classicos">Clássicos</button>
+          <button class="filter-button" data-filter="especiais">Especiais</button>
+          <span class="menu-count">06 opções no cardápio</span>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-category="classicos">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80" alt="Brasa Clássico">
+              <span class="product-tag">O favorito</span>
+            </div>
+            <div class="product-info">
+              <div class="product-title-row"><h3>Brasa Clássico</h3><strong>R$ 28,90</strong></div>
+              <p>Pão brioche, burger 160g, queijo cheddar, alface e molho da casa.</p>
+              <a class="product-order" href="#contato" data-product="Brasa Clássico">Pedir esse <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="especiais">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=700&q=80" alt="Cheddar Crocante">
+              <span class="product-tag">Crocante</span>
+            </div>
+            <div class="product-info">
+              <div class="product-title-row"><h3>Cheddar Crocante</h3><strong>R$ 32,90</strong></div>
+              <p>Carne na brasa, cheddar cremoso, cebola crispy e maionese defumada.</p>
+              <a class="product-order" href="#contato" data-product="Cheddar Crocante">Pedir esse <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="classicos">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=700&q=80" alt="Duplo da Casa">
+            </div>
+            <div class="product-info">
+              <div class="product-title-row"><h3>Duplo da Casa</h3><strong>R$ 35,90</strong></div>
+              <p>Dois burgers de 100g, queijo prato, picles e molho especial.</p>
+              <a class="product-order" href="#contato" data-product="Duplo da Casa">Pedir esse <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="especiais">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=80" alt="Bacon Supreme">
+              <span class="product-tag">Mais pedido</span>
+            </div>
+            <div class="product-info">
+              <div class="product-title-row"><h3>Bacon Supreme</h3><strong>R$ 34,90</strong></div>
+              <p>Cheddar, bacon crocante, cebola caramelizada e molho barbecue.</p>
+              <a class="product-order" href="#contato" data-product="Bacon Supreme">Pedir esse <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="classicos">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=700&q=80" alt="Frango Crocante">
+            </div>
+            <div class="product-info">
+              <div class="product-title-row"><h3>Frango Crocante</h3><strong>R$ 27,90</strong></div>
+              <p>Frango empanado, queijo, alface fresca e maionese de ervas.</p>
+              <a class="product-order" href="#contato" data-product="Frango Crocante">Pedir esse <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="especiais">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=700&q=80" alt="Veggie da Brasa">
+              <span class="product-tag">Sem carne</span>
+            </div>
+            <div class="product-info">
+              <div class="product-title-row"><h3>Veggie da Brasa</h3><strong>R$ 29,90</strong></div>
+              <p>Burger vegetal, queijo, rúcula, tomate e molho de iogurte.</p>
+              <a class="product-order" href="#contato" data-product="Veggie da Brasa">Pedir esse <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="menu-note">* Produtos e preços demonstrativos para este projeto de portfólio.</p>
+      </div>
+    </section>
+
+    <section class="story-section section" id="historia">
+      <div class="container story-grid">
+        <div class="story-visual">
+          <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee?auto=format&fit=crop&w=1000&q=85" alt="Hambúrguer sendo preparado na cozinha">
+          <div class="story-note"><span class="note-symbol">✳</span><span><strong>Sem pressa.</strong><small>Com muito sabor.</small></span></div>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> NOSSA HISTÓRIA</p>
+          <h2>Mais que um burger.<br><span>Um momento.</span></h2>
+          <p>A Brasa Burger nasceu de uma ideia simples: fazer hambúrguer de verdade, com bons ingredientes e cuidado em cada detalhe.</p>
+          <p>Da carne selada na chapa ao último toque do nosso molho, tudo é pensado para transformar uma refeição comum em um momento especial.</p>
+          <a class="button button-outline" href="#contato">Vem conhecer <span>↗</span></a>
+          <div class="story-signature">Brasa Burger <span>— sabor sem atalhos.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-section section">
+      <div class="container">
+        <div class="values-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> O NOSSO JEITO</p>
+          <h2>O segredo está <span>nos detalhes.</span></h2>
+        </div>
+        <div class="values-grid">
+          <article class="value-card"><span class="value-number">01</span><div class="value-icon">♨</div><h3>Na brasa, sempre</h3><p>Carne preparada na hora para preservar suculência e sabor.</p></article>
+          <article class="value-card"><span class="value-number">02</span><div class="value-icon">✳</div><h3>Ingredientes de verdade</h3><p>Selecionamos cada ingrediente para entregar uma combinação equilibrada.</p></article>
+          <article class="value-card"><span class="value-number">03</span><div class="value-icon">♡</div><h3>Feito com cuidado</h3><p>Cada pedido recebe a mesma atenção, do primeiro ao último detalhe.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contato">
+      <div class="container contact-panel">
+        <div class="contact-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> BATEU A FOME?</p>
+          <h2>Seu próximo burger<br>está <span>aqui.</span></h2>
+          <p>Escolha seu favorito e chama a gente. A chapa já está quente!</p>
+          <a class="button" id="whatsapp-button" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">Pedir pelo WhatsApp <span>↗</span></a>
+          <small class="demo-warning">Número demonstrativo: substitua pelo WhatsApp real antes de publicar.</small>
+        </div>
+        <div class="contact-details">
+          <div class="contact-detail"><span class="contact-icon">⌖</span><div><small>ONDE ESTAMOS</small><strong>Rua das Brasas, 123</strong><span>Centro — São Paulo, SP</span></div></div>
+          <div class="contact-detail"><span class="contact-icon">◷</span><div><small>HORÁRIO DE FUNCIONAMENTO</small><strong>Terça a domingo</strong><span>18h às 23h</span></div></div>
+          <div class="contact-detail"><span class="contact-icon">✉</span><div><small>FALA COM A GENTE</small><strong>oi@brasaburger.com.br</strong><span>Respondemos assim que possível</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark">B<span>🔥</span></span><span class="brand-name">BRASA <small>BURGER</small></span></a>
+      <p>Feito na brasa. Feito pra você.</p>
+      <span class="copyright">© <span id="current-year"></span> Brasa Burger. Projeto demonstrativo.</span>
+    </div>
+  </footer>
+
+  <a class="back-to-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
+</body>
+</html>
